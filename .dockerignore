@@ -12,4 +12,4 @@ nginx
 docker-compose.yml
 *.test.js
 jest.config.js
-public
+
