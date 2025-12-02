@@ -75,7 +75,7 @@ jobs:
         key: ${{ secrets.VPS_SSH_KEY }}
         port: ${{ secrets.VPS_PORT }}
         script: |
-          cd /home/${{ secrets.VPS_USERNAME }}/evaluacionU2U3
+          cd ~/evaluacionU2U3
           git pull origin main
           echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
           chmod +x scripts/blue-green-deploy.sh
